@@ -1,0 +1,84 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#bgf{
+  position: absolute;
+  width: 600px;
+  height: 1500px;
+  bottom: 0vh;
+  display: grid;
+  place-items: center;
+  background: #000000;
+  color: aliceblue;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 0px #444444;
+  background: radial-gradient(circle, rgb(0, 0, 0) 24%, hsl(0, 0%, 23%) 100%, rgba(0,255,160,0.010224158022584029) 100%);
+  -moz-box-shadow: 0px 6px 0px #444444;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  text-shadow: 2px 2px 4px #000000;
+  -webkit-box-shadow: 0px 6px 0px #444444;
+  -moz-box-shadow: 0px 6px 0px #444444;
+  box-shadow: 0px 6px 0px #444444;
+  text-align: center;
+  transition: 0.2s;
+  font-size: 30px;
+  line-height: 400px;
+  opacity: 1;
+}
+  
+h1 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  bottom: 110vh;
+}
+  
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+  
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+  
+li:last-child {
+  border-bottom: none;
+}
+  
+.rank {
+  font-weight: bold;
+  color: #007BFF;
+}
+  
+.nome {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+  
+.acertos {
+  display: flex;
+  align-items: center;
+  color: #ff9500;
+}
+  
+.estrela {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+  

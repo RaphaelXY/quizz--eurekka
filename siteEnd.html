@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="siteEnd.css">
+</head>
+<body>
+
+  
+  <div id ="bgf">
+    <h1>Leaderboard</h1>
+    <ul id="ranking"></ul>
+      <script>
+        document.body.style.background = "#f3f3f3 url('GERALr.png') no-repeat right top";
+    // Carregar jogadores do localStorage
+      const jogadores = JSON.parse(localStorage.getItem("jogadores")) || [];
+  
+    // Ordenar os jogadores pela quantidade de acertos (decrescente)
+      jogadores.sort((a, b) => b.acertos - a.acertos);
+  
+        const rankingEl = document.getElementById("ranking");
+  
+      jogadores.forEach(jogador => {
+        const li = document.createElement("li");
+      li.textContent = `${jogador.nome}: ${jogador.acertos} acertos`;
+      rankingEl.appendChild(li);
+    });
+    </script>
+  </div>
+</body>
+</html>

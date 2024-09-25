@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#box{
+    position: fixed;
+    top: 7%;
+    width:1000px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.966);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 0;
+    right: 25%;
+    transform: translatey(0px);
+    animation: float 2s ease-in-out infinite;
+    }
+#box::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-image: conic-gradient(0deg, rgba(131,58,180,1) 0%, rgba(169,73,73,1) 29%, rgba(29,253,38,1) 51%, rgba(55,206,211,1) 78%, rgba(252,176,69,1) 100%);  
+}
+#box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+#box::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+
+#box:before {
+    opacity: 1;
+  }
+  
+  #box:active {
+    color: #000;
+    font-weight: bold;
+  }
+#buttonA{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    height: 80px;
+    width: 412px;
+    background: radial-gradient(circle, rgb(0, 0, 0) 24%, hsl(0, 0%, 23%) 100%, rgba(0,255,160,0.010224158022584029) 100%);
+    border:0;
+    place-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    display: grid;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px; 
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 0px 6px 0px #444444;
+    -moz-box-shadow: 0px 6px 0px #444444;
+    box-shadow: 0px 6px 0px #444444;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+
+}
+
+#buttonB{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 80px;
+    width: 412px;
+    background: radial-gradient(circle, rgb(0, 0, 0) 24%, hsl(0, 0%, 23%) 100%, rgba(0,255,160,0.010224158022584029) 100%);
+    border:0;
+    place-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    display: grid;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px; 
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 0px 6px 0px #444444;
+    -moz-box-shadow: 0px 6px 0px #444444;
+    box-shadow: 0px 6px 0px #444444;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+
+}
+#buttonC{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    height: 80px;
+    width: 412px;
+    background: radial-gradient(circle, rgb(0, 0, 0) 24%, hsl(0, 0%, 23%) 100%, rgba(0,255,160,0.010224158022584029) 100%);
+    border:0;
+    place-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    display: grid;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px; 
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 0px 6px 0px #444444;
+    -moz-box-shadow: 0px 6px 0px #444444;
+    box-shadow: 0px 6px 0px #444444;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+
+}
+#buttonD{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    height: 80px;
+    width: 412px;
+    background: radial-gradient(circle, rgb(0, 0, 0) 24%, hsl(0, 0%, 23%) 100%, rgba(0,255,160,0.010224158022584029) 100%);
+    border:0;
+    place-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    display: grid;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px; 
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 0px 6px 0px #444444;
+    -moz-box-shadow: 0px 6px 0px #444444;
+    box-shadow: 0px 6px 0px #444444;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+
+#buttonA:hover{
+    box-shadow: 0px 0px 10px 8px #ffffff,
+    inset 0px 0px 10px 2px #ffffff;
+}
+#buttonB:hover{
+    box-shadow: 0px 0px 10px 8px #f0eeee,
+    inset 0px 0px 10px 2px #e2e1e1;
+}
+#buttonC:hover{
+    box-shadow: 0px 0px 10px 8px #ffffff,
+    inset 0px 0px 10px 2px #ffffff;
+}
+#buttonD:hover{
+    box-shadow: 0px 0px 10px 8px #ffffff,
+    inset 0px 0px 10px 2px #ffffff;
+}
+#pergunta {
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 180px;
+    right: 0;
+    left: -2%;
+    max-width: 1000px; 
+    padding: 20px;
+    background-color: #8b8b8b00;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto 20px; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    transform: translatey(0px);
+    animation: float 2s ease-in-out infinite;
+    border: #ffffff solid 0px;
+}
+
+@keyframes float{
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
